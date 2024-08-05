@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Добавить заказ</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+  </style>
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--green">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h2 style="font-weight: 600;">Добавление заказа</h2>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color: green;">
+        <a href="/index.html" class="mdl-layout__tab">Вернуться</a>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+
+        <form class="input-form">
+            <div class="wrapper">
+                <div class="inp">
+                    <p>Наименование изделия</p>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="inp">
+                    <p>Срок изготовления</p>
+                    <input type="date" placeholder="">
+                </div>
+                <div class="inp">
+                    <p>Тираж</p>
+                    <input type="number" placeholder="">
+                </div>
+                <div class="inp">
+                    <p>Цех</p>
+                    <select name="" id="">
+                        <option value="">Цех №1</option>
+                        <option value="">Цех №2</option>
+                        <option value="">Цех №3</option>
+                    </select>
+                </div>
+                <div class="inp">
+                    <p>Шаблон (<a href="/add_template.html">Добавить</a>)</p>
+            
+                    <select name="" id="">
+                        <option value="">Шаблон №1</option>
+                        <option value="">Шаблон №2</option>
+                        <option value="">Шаблон №3</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <button id="sub" class="mdl-button mdl-js-button mdl-button--raised mdl-button--green">Добавить заказ</button>
+
+        </form>
+      
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
+
+<style>
+    .wrapper{
+        margin: 0 auto;
+        padding: 10px 30px;
+        display: flex;
+        margin-top: 1rem;
+        justify-content: space-between;
+        width: 1200px;
+    }
+    input{
+        padding: 10px 30px;
+        border: none;
+        box-shadow:  0 0 0.5rem lightgray;
+        border-radius: 5px;
+        outline: none;
+    }
+    select{
+
+        padding: 10px 30px;
+        border: none;
+        box-shadow:  0 0 0.5rem lightgray;
+        border-radius: 5px;
+        outline: none;
+
+    }
+    #sub{
+        margin:  0 auto;
+        display: flex;
+        justify-content: center;
+        background-color: #4caf50;
+        color: white;
+    }
+    a{
+        color: green;
+    }
+</style>
